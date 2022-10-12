@@ -2,7 +2,7 @@
 
 namespace LessonTwo.Core.App.Services;
 
-public static class BookLibraryService
+public static class BookLibraryService 
 {
     /// <summary>
     /// Библиотека книг.
