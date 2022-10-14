@@ -14,6 +14,8 @@ public static class ExtensionsSetupMiddlewarePipeline
             app.UseHsts();
         }
 
+        app.UseViktor();
+
         app.UseCounter();
 
         app.UseHttpsRedirection();
@@ -31,6 +33,11 @@ public static class ExtensionsSetupMiddlewarePipeline
     public static IApplicationBuilder UseCounter(this IApplicationBuilder builder)
     {
         return builder.UseMiddleware<CounterMiddleware>();
+    }
+
+    public static IApplicationBuilder UseViktor(this IApplicationBuilder builder)
+    {
+        return builder.UseMiddleware<ViktorMiddleware>();
     }
 }
 
