@@ -2,7 +2,6 @@
 
 namespace LessonTwo.Domain.Models;
 
-
 public class Book : Entity
 {
     /// <summary>
