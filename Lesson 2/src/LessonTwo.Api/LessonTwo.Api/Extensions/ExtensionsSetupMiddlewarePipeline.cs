@@ -14,7 +14,7 @@ public static class ExtensionsSetupMiddlewarePipeline
             app.UseHsts();
         }
 
-        app.UseViktor();
+        app.UseBooksInit();
 
         app.UseCounter();
 
@@ -35,9 +35,9 @@ public static class ExtensionsSetupMiddlewarePipeline
         return builder.UseMiddleware<CounterMiddleware>();
     }
 
-    public static IApplicationBuilder UseViktor(this IApplicationBuilder builder)
+    public static IApplicationBuilder UseBooksInit(this IApplicationBuilder builder)
     {
-        return builder.UseMiddleware<ViktorMiddleware>();
+        return builder.UseMiddleware<BooksInitMiddleware>();
     }
 }
 

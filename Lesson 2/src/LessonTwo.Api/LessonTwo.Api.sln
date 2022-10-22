@@ -12,9 +12,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LessonTwo.Core.App", "LessonTwo.Core.App\LessonTwo.Core.App.csproj", "{DE6C3D0A-A5D9-487E-AE1A-956D013E9586}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F5646558-8E98-46BB-97AA-9FFA284ED4D4}"
-	ProjectSection(SolutionItems) = preProject
-		ForLessonAboutReflection.cs = ForLessonAboutReflection.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
