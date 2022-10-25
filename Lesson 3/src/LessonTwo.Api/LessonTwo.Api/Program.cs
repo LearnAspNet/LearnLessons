@@ -4,7 +4,7 @@ using Serilog.Events;
 
 namespace LessonTwo.Api;
 
-public class Program
+public class Program 
 {
     public static int Main(string[] args)
     {
