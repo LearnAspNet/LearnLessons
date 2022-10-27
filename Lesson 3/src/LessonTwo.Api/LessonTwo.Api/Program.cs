@@ -19,7 +19,7 @@ public class Program
         {
             Log.Information("Starting web host");
 
-            var builder = WebApplication.CreateBuilder(args);
+            var builder = WebApplication.CreateBuilder(args);               
 
             #region Serilog
 

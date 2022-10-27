@@ -8,6 +8,7 @@ namespace LessonTwo.Core.App.Services
         public string GetService()
         {
             Guid guid = Guid.NewGuid(); 
+            ServiceAId = guid;
             return guid.ToString();
         }
     }
