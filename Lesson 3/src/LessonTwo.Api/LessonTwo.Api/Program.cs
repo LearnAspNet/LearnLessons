@@ -36,6 +36,10 @@ public class Program
 
             var app = builder.Build();
 
+            app.MapControllerRoute(
+                name:"default",
+                pattern:"{controller=NewGuid}/{action=Services}/{id?}");
+
             app.SetupMiddleware();
 
             app.Run();
