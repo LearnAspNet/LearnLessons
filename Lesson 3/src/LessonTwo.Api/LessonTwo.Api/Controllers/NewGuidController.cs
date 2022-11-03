@@ -3,22 +3,25 @@ using LessonTwo.Domain.Interfaces;
 
 namespace LessonTwo.Api.Controllers
 {
-    public class NewGuidController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class NewGuidController : ControllerBase
     {
-        readonly IServiceA serviceA;
-        readonly IServiceB serviceB;
-        readonly IServiceC serviceC;
+        private readonly IServiceA _serviceA;
+        private readonly IServiceB _serviceB;
+        private readonly IServiceC _serviceC;
 
         public NewGuidController(IServiceA serviceA, IServiceB serviceB, IServiceC serviceC)
         {
-            this.serviceA = serviceA;
-            this.serviceB = serviceB;
-            this.serviceC = serviceC;
+            this._serviceA = serviceA;
+            this._serviceB = serviceB;
+            this._serviceC = serviceC;
         }
 
+        [Route("services")]
         public string Services()
         {
-            string services = $"{serviceA.GetService()} {serviceB.GetService()} {serviceC.GetService()}";
+            string services = $"{_serviceA.GetService()} {_serviceB.GetService()} {_serviceC.GetService()}";
             return services;
         }        
     }

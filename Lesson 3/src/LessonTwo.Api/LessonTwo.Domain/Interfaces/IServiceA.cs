@@ -8,7 +8,8 @@ namespace LessonTwo.Domain.Interfaces
 {
     public interface IServiceA
     {
-        Guid ServiceAId { get; set; }
+        Guid ServiceAId { get; }
+
         string GetService();
     }
 }
