@@ -12,9 +12,11 @@ public static class ExtensionsSetupMiddlewarePipeline
             app.UseExceptionHandler("/Error");
             // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
             app.UseHsts();
-        }
+        }        
 
         app.UseCounter();
+
+        app.UseNewGuid();
 
         app.UseHttpsRedirection();
 
@@ -31,6 +33,11 @@ public static class ExtensionsSetupMiddlewarePipeline
     public static IApplicationBuilder UseCounter(this IApplicationBuilder builder)
     {
         return builder.UseMiddleware<CounterMiddleware>();
+    }
+
+    public static IApplicationBuilder UseNewGuid(this IApplicationBuilder builder)
+    {
+        return builder.UseMiddleware<GuidMiddleware>();
     }
 }
 

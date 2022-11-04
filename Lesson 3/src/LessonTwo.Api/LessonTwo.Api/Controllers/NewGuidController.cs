@@ -21,7 +21,7 @@ namespace LessonTwo.Api.Controllers
         [Route("services")]
         public string Services()
         {
-            string services = $"{_serviceA.GetService()} {_serviceB.GetService()} {_serviceC.GetService()}";
+            string services = $"TransientGuid: {_serviceA.GetService()} \nScopedGuid: {_serviceB.GetService()} \nSingletonGuid: {_serviceC.GetService()}";
             return services;
         }        
     }
