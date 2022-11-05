@@ -14,7 +14,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LessonTwo.Core.App\Lesson.Core.App.csproj" />
+    <ProjectReference Include="..\Lesson.Core.App\Lesson.Core.App.csproj" />
+    <ProjectReference Include="..\Lesson.Domain\Lesson.Domain.csproj" />
   </ItemGroup>
 
 </Project>

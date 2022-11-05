@@ -1,7 +1,7 @@
 ﻿using LessonTwo.Api.Middlewares;
 using Serilog;
 
-namespace LessonTwo.Api.Extensions;
+namespace Lesson.Api.Extensions;
 
 public static class ExtensionsSetupMiddlewarePipeline
 {

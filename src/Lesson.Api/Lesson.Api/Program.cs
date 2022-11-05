@@ -1,8 +1,8 @@
-using LessonTwo.Api.Extensions;
+using Lesson.Api.Extensions;
 using Serilog;
 using Serilog.Events;
 
-namespace LessonTwo.Api;
+namespace Lesson.Api;
 
 public class Program
 {

@@ -1,7 +1,7 @@
-﻿using LessonTwo.Core.App.Services;
+﻿using Lesson.Core.App.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LessonTwo.Api.Controllers
+namespace Lesson.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

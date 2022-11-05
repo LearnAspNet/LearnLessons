@@ -1,4 +1,4 @@
-﻿namespace LessonTwo.Domain.Abstractions;
+﻿namespace Lesson.Domain.Abstractions;
 
 public abstract class Entity
 {

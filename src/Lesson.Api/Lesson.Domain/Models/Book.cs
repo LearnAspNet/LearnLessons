@@ -1,4 +1,4 @@
-﻿using LessonTwo.Domain.Abstractions;
+﻿using Lesson.Domain.Abstractions;
 
 namespace LessonTwo.Domain.Models;
 
