@@ -1,6 +1,6 @@
 ﻿using Lesson.Domain.Abstractions;
 
-namespace LessonTwo.Domain.Models;
+namespace Lesson.Domain.Models;
 
 public class Book : Entity
 {
@@ -12,10 +12,15 @@ public class Book : Entity
     /// <summary>
     /// Описание книги. 
     /// </summary>
-    public string Title { get; set; } = String.Empty;
+    public string? Title { get; set; }
 
     /// <summary>
     /// Регистрационный номер книги.
     /// </summary>
     public Guid RegistrationNumber { get; set; }
+
+    /// <summary>
+    /// Авторы книги
+    /// </summary>
+    public List<Author>? Authors { get; set; }
 }

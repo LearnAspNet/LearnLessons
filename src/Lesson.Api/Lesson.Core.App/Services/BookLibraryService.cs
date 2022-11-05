@@ -1,11 +1,5 @@
-﻿using LessonTwo.Domain.Models;
+﻿namespace Lesson.Core.App.Services;
 
-namespace Lesson.Core.App.Services;
-
-public static class BookLibraryService
+public class BookLibraryService
 {
-    /// <summary>
-    /// Библиотека книг.
-    /// </summary>
-    public static List<Book> BooksLibrary { get; set; } = new List<Book>();
 }

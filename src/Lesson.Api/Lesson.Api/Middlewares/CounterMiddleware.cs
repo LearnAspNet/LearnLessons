@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Serilog;
 
-namespace LessonTwo.Api.Middlewares;
+namespace Lesson.Api.Middlewares;
 
 public class CounterMiddleware
 {

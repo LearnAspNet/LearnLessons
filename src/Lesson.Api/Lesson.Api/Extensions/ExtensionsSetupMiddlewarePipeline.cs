@@ -1,4 +1,4 @@
-﻿using LessonTwo.Api.Middlewares;
+﻿using Lesson.Api.Middlewares;
 using Serilog;
 
 namespace Lesson.Api.Extensions;
