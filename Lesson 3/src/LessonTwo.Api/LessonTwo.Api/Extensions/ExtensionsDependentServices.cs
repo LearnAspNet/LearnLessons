@@ -13,6 +13,7 @@ namespace LessonTwo.Api.Extensions
             builder.Services.AddTransient<IServiceA, AService>();
             builder.Services.AddScoped<IServiceB, BService>();
             builder.Services.AddSingleton<IServiceC, CService>();
+            builder.Services.AddTransient<IServiceF, FService>();
 
             return builder;
         }

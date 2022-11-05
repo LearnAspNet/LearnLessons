@@ -2,20 +2,22 @@
 
 namespace LessonTwo.Core.App.Services
 {
-    public class FService
+    public class FService : IServiceF
     {
-        AService _AService = new AService();
-        BService _BService = new BService();
-        CService _CService = new CService();
-        public FService(AService serviceA, BService serviceB, CService serviceC)
+        private readonly IServiceA _serviceA;
+        private readonly IServiceB _serviceB;
+        private readonly IServiceC _serviceC;
+
+        public FService(IServiceA serviceA, IServiceB serviceB, IServiceC serviceC)
         {
-            this._AService = serviceA;
-            this._BService = serviceB;
-            this._CService = serviceC;
+            this._serviceA = serviceA;
+            this._serviceB = serviceB;
+            this._serviceC = serviceC;
         }
+
         public string GetServices()
         {
-            return $"TransientGuid: {_AService.ServiceAId} \nScopedGuid: {_BService.ServiceBId} \nSingletonGuid: {_CService.ServiceCId}";
+            return $"TransientGuid: {_serviceA.GetService()} \nScopedGuid: {_serviceB.GetService()} \nSingletonGuid: {_serviceC.GetService()}";
         }
     }
 }
