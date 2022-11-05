@@ -5,12 +5,12 @@ namespace LessonTwo.Core.App.Services
     public class CService : IServiceC
     {
         public Guid ServiceCId { get; set; }
+        Guid guid = Guid.NewGuid();
 
         public string GetService()
         {
-            Guid guid = Guid.NewGuid();
             ServiceCId = guid;
-            return guid.ToString();
+            return ServiceCId.ToString();
         }
     }
 }
