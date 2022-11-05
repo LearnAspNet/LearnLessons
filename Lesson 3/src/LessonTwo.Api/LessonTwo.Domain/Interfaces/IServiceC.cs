@@ -8,7 +8,7 @@ namespace LessonTwo.Domain.Interfaces
 {
     public interface IServiceC
     {
-        Guid ServiceCId { get; set; }
+        Guid ServiceCId { get; }
 
         string GetService();
     }
