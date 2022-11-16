@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonTwo.Api", "LessonTwo.Api\LessonTwo.Api.csproj", "{BD58B155-79FA-440B-AE9B-45F78D89934C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LessonTwo.Api", "LessonTwo.Api\LessonTwo.Api.csproj", "{BD58B155-79FA-440B-AE9B-45F78D89934C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D6C08BA5-55C3-42F8-B65F-1E9867FE20EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonTwo.Domain", "LessonTwo.Domain\LessonTwo.Domain.csproj", "{E9AE3C4F-9889-4DCE-A89E-71549A75F69B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LessonTwo.Domain", "LessonTwo.Domain\LessonTwo.Domain.csproj", "{E9AE3C4F-9889-4DCE-A89E-71549A75F69B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonTwo.Core.App", "LessonTwo.Core.App\LessonTwo.Core.App.csproj", "{DE6C3D0A-A5D9-487E-AE1A-956D013E9586}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LessonTwo.Core.App", "LessonTwo.Core.App\LessonTwo.Core.App.csproj", "{DE6C3D0A-A5D9-487E-AE1A-956D013E9586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LessonTwo.Api.Tests", "LessonTwo.Api.Tests\LessonTwo.Api.Tests.csproj", "{4853A517-9CCC-4C83-943C-47DEED8C7E71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{DE6C3D0A-A5D9-487E-AE1A-956D013E9586}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE6C3D0A-A5D9-487E-AE1A-956D013E9586}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE6C3D0A-A5D9-487E-AE1A-956D013E9586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4853A517-9CCC-4C83-943C-47DEED8C7E71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4853A517-9CCC-4C83-943C-47DEED8C7E71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4853A517-9CCC-4C83-943C-47DEED8C7E71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4853A517-9CCC-4C83-943C-47DEED8C7E71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
